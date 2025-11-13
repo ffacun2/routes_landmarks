@@ -8,7 +8,6 @@ import { Button } from "@/src/components/ui/button"
 import { Input } from "@/src/components/ui/input"
 import { Label } from "@/src/components/ui/label"
 import { Card } from "@/src/components/ui/card"
-import toast from "react-hot-toast";
 import { Save, Share2 } from "lucide-react"
 import { saveRoute } from "@/src/app/actions/routes"
 import Link from "next/link"
@@ -21,7 +20,7 @@ export function RouteCreator() {
   const [showForm, setShowForm] = useState(false)
   const [saving, setSaving] = useState(false)
   const [savedRouteId, setSavedRouteId] = useState<string | null>(null)
-//   const mapRef = useRef<any>(null)
+  const mapRef = useRef<any>(null)
 
   const handleMapClick = useCallback((lat: number, lng: number) => {
     setSelectedPosition([lat, lng])
@@ -44,7 +43,7 @@ export function RouteCreator() {
 
   const handleDeleteLandmark = useCallback(
     (id: string) => {
-      setLandmarks((prev) => prev.filter((l) => l.id !== id).map((l, idx) => ({ ...l, order: idx })))
+      setLandmarks((prev) => prev.filter((l) => l.id !== id).map((l, idx) => ({ ...l, order: idx }))) 
     },
     [],
   )
@@ -72,12 +71,10 @@ export function RouteCreator() {
 
       if (result.success && result.id) {
         setSavedRouteId(result.id)
-        
       } else {
         throw new Error(result.error || "Error al guardar")
       }
     } catch (error) {
-      
     } finally {
       setSaving(false)
     }
@@ -87,7 +84,6 @@ export function RouteCreator() {
     if (!savedRouteId) return
     const url = `${window.location.origin}/route/${savedRouteId}`
     navigator.clipboard.writeText(url)
-    
   }
 
   return (
@@ -192,7 +188,7 @@ export function RouteCreator() {
           {/* Map */}
           <div className="lg:col-span-2">
             <Card className="h-[calc(100vh-300px)] overflow-hidden">
-              {/* <MapContainer landmarks={landmarks} onMapClick={handleMapClick} ref={mapRef} /> */}
+              <MapContainer landmarks={landmarks} onMapClick={handleMapClick} ref={mapRef} />
             </Card>
           </div>
         </div>
