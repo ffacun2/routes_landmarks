@@ -1,0 +1,41 @@
+{
+  "id": "b08e3f66-91a8-4330-8a55-8c6e88667768",
+  "name": "La ruta de Joaco",
+  "author": "Joaco",
+  "authorId": "664f7102-d699-7662-f291-c99d787a7d1a",
+  "landmarks": [
+    {
+      "id": "d59d76d8-f10b-4163-9236-74a6e726a8c7",
+      "name": "Landmark 1",
+      "description": "",
+      "lat": -38.03835729798081,
+      "lng": -57.545442581176765,
+      "order": 0
+    },
+    {
+      "id": "8fa8ff81-c6e8-4a1f-8ddf-24f820ff952f",
+      "name": "Landmark 2",
+      "description": "",
+      "lat": -38.00035618059362,
+      "lng": -57.54123687744141,
+      "order": 1
+    },
+    {
+      "id": "21d97b37-5d46-4000-bd5b-efde47a33c24",
+      "name": "Landmark 3",
+      "description": "",
+      "lat": -37.96504212043365,
+      "lng": -57.54158020019532,
+      "order": 2
+    },
+    {
+      "id": "8518a440-0828-4073-a059-ba42486a9855",
+      "name": "Landmark 4",
+      "description": "",
+      "lat": -38.032678668241445,
+      "lng": -57.553939819335945,
+      "order": 3
+    }
+  ],
+  "createdAt": "2025-11-21T15:07:35.370Z"
+}
