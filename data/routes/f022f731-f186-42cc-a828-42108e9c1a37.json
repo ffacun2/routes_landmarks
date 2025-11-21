@@ -1,0 +1,65 @@
+{
+  "id": "f022f731-f186-42cc-a828-42108e9c1a37",
+  "name": "my first route",
+  "author": "Fac",
+  "authorId": "002af3c4-5720-e7dd-3c16-f14386cf82eb",
+  "landmarks": [
+    {
+      "id": "bb4b7d69-cbd8-41a0-adc6-badaa93d8649",
+      "name": "Landmark 1",
+      "description": "",
+      "lat": -38.080650298752495,
+      "lng": -57.54525086715555,
+      "order": 0
+    },
+    {
+      "id": "4deb1405-b817-4cfb-ba3d-e8b38a3336c2",
+      "name": "Landmark 2",
+      "description": "",
+      "lat": -38.078589660587646,
+      "lng": -57.54317461958442,
+      "order": 1
+    },
+    {
+      "id": "b6b053e3-41bb-4d8a-b6da-03a0bab16585",
+      "name": "Landmark 3",
+      "description": "",
+      "lat": -38.07639373655825,
+      "lng": -57.544824314996156,
+      "order": 2
+    },
+    {
+      "id": "664648a0-b95b-40aa-b126-a05dd4c8bbed",
+      "name": "Landmark 4",
+      "description": "",
+      "lat": -38.073961389494414,
+      "lng": -57.54660341375408,
+      "order": 3
+    },
+    {
+      "id": "f86b9323-61e3-48fa-9b4a-8448124603c2",
+      "name": "Landmark 5",
+      "description": "",
+      "lat": -38.07117414046799,
+      "lng": -57.547718919011025,
+      "order": 4
+    },
+    {
+      "id": "da70a3e9-ff29-44ca-8eac-81b6b8805332",
+      "name": "Landmark 6",
+      "description": "",
+      "lat": -38.066786144900846,
+      "lng": -57.547633066840376,
+      "order": 5
+    },
+    {
+      "id": "a7efdba7-7bb0-4f72-a1a0-fa53ee38daaa",
+      "name": "Landmark 7",
+      "description": "",
+      "lat": -38.06165078407626,
+      "lng": -57.54596552198777,
+      "order": 6
+    }
+  ],
+  "createdAt": "2025-11-21T03:28:50.149Z"
+}

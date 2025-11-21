@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+
+  /* Primary Colors */
+  --color-primary: #1a472a;
+  --color-primary-light: #2d6d3f;
+  --color-primary-lighter: #4a9d5d;
+
+  /* Neutrals */
+  --color-background: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f0f2f5;
+  --color-border: #e1e8ed;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #64748b;
+
+  /* Accents */
+  --color-accent: #0066cc;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Spacing */
+  --radius: 0.5rem;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 0;
+}
+
+body {
+  scroll-margin-top: 0;
+  overflow-x: hidden;
+}
+
+/* Asegurar que las páginas comiencen en el top */
+main {
+  scroll-margin-top: 0;
+  scroll-padding-top: 0;
+}
+
+body {
+  @apply bg-background text-text-primary;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-text-secondary;
+}
+
+/* Asegurar que el header sticky esté por encima de todo */
+header.sticky {
+  position: sticky !important;
+  z-index: 400 !important;
+}
+
+/* Evitar que los h1 se superpongan con el header sticky */
+main header:not(.sticky) {
+  position: relative;
+  z-index: 1;
+}
+
+main header:not(.sticky) h1 {
+  scroll-margin-top: 5rem;
+}
+
+/* Asegurar que el mapa y sus elementos queden detrás del header sticky */
+.leaflet-container,
+.leaflet-pane,
+.leaflet-map-pane,
+.leaflet-tile-pane,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-tooltip-pane,
+.leaflet-popup-pane {
+  z-index: 1 !important;
+}
+
+.leaflet-control-container {
+  z-index: 10 !important;
+}
+
+.leaflet-popup {
+  z-index: 20 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 10 !important;
+}

@@ -1,17 +1,3 @@
-[
-  {
-    "id": "route-1763075246173-yf4anar3x",
-    "name": "afaef",
-    "landmarks": [
-      {
-        "name": "casino",
-        "description": "121",
-        "lat": -38.00455743727493,
-        "lng": -57.54378187877445,
-        "id": "77fb4d15-26bb-4364-aa58-22e75486cfed",
-        "order": 0
-      }
-    ],
-    "createdAt": "2025-11-13T23:07:26.135Z"
-  }
-]
+{
+  "routes": []
+}
